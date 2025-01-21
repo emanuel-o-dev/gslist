@@ -1,7 +1,5 @@
 package com.gamestore.gslist.dto;
 
-import java.util.Objects;
-
 import org.springframework.beans.BeanUtils;
 
 import com.gamestore.gslist.entities.Game;

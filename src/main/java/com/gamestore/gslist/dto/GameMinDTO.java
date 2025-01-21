@@ -1,6 +1,7 @@
 package com.gamestore.gslist.dto;
 
 import com.gamestore.gslist.entities.Game;
+import com.gamestore.gslist.projections.GameMinProjection;
 
 public class GameMinDTO {
 
@@ -20,6 +21,13 @@ public class GameMinDTO {
 		this.year = entity.getYear();
 		this.imgUrl = entity.getImgUrl();
 		this.shortDescription = entity.getShortDescription();
+	}
+	public GameMinDTO(GameMinProjection projecction) {
+		this.id = projecction.getId();
+		this.title = projecction.getTitle();	
+		this.year = projecction.getYear();
+		this.imgUrl = projecction.getImgUrl();
+		this.shortDescription = projecction.getShortDescription();
 	}
 
 	public Long getId() {
